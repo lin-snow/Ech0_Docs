@@ -33,6 +33,52 @@ POST /login
 ---
 
 
+### 注册
+```
+POST /register
+```
+
+**描述**: 用户注册接口
+
+**请求体**:
+```json
+{"username":"1","password":"1"}
+```
+
+**响应示例**:
+```json
+{"code":1,"msg":"注册成功","data":null}
+```
+
+---
+
+### 注册
+```
+POST /allusers
+```
+
+**描述**: 获取所有用户及其基本信息接口
+
+**响应示例**:
+```json
+{
+    "code": 1,
+    "msg": "获取用户列表成功",
+    "data": [
+        {
+            "id": 2,
+            "username": "2",
+            "password": "",
+            "is_admin": false,
+            "avatar": ""
+        }
+    ]
+}
+```
+
+---
+
+
 ## 认证接口 (Authenticated APIs)
 
 > **注意**: 以下接口需要在请求头中携带认证token
