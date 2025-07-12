@@ -81,7 +81,7 @@ GET /allusers
 
 ## 认证接口 (Authenticated APIs)
 
-> **注意**: 以下接口需要在请求头中携带认证token
+> **注意**: 以下有关认证的所有接口需要在请求头中携带认证token
 > 
 > `Authorization: Bearer <your_token>`
 
@@ -91,11 +91,6 @@ GET /user
 ```
 
 **描述**: 获取当前登录用户的信息
-
-**请求头**:
-```
-Authorization: Bearer <your_token>
-```
 
 **响应示例**:
 ```json
