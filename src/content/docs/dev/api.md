@@ -3,11 +3,9 @@ title: API文档
 description: API接口文档和使用指南
 ---
 
-# 用户管理 API 文档
+## User功能API 
 
 **基础URL**: `http://ip:6277/api`
-
-## 公开接口 (Public APIs)
 
 ### 登录
 ```
@@ -87,20 +85,17 @@ GET /allusers
 ```
 
 
-
-
-## 认证接口 (Authenticated APIs)
-
-> **注意**: 以下有关认证的所有接口需要在请求头中携带认证token
-> 
-> `Authorization: Bearer <your_token>`
-
 ### 获取用户信息
 ```
 GET /user
 ```
 
 **描述**: 获取当前登录用户的信息
+
+**请求头**:
+```
+Authorization: Bearer <your_token>
+```
 
 **响应示例**:
 ```json
@@ -123,6 +118,11 @@ PUT /user
 ```
 
 **描述**: 更新当前登录用户的信息
+
+**请求头**:
+```
+Authorization: Bearer <your_token>
+```
 
 **请求体**:
 ```json
@@ -150,6 +150,11 @@ DELETE /user/用户id
 
 **描述**: 删除指定用户
 
+**请求头**:
+```
+Authorization: Bearer <your_token>
+```
+
 **权限要求**: 
 - 需要管理员或系统管理员权限
 - 必须在请求头中携带有效的管理员token
@@ -173,6 +178,11 @@ PUT /user/admin/:id
 
 **描述**: 更新指定用户权限
 
+**请求头**:
+```
+Authorization: Bearer <your_token>
+```
+
 **权限要求**: 
 - 需要管理员或系统管理员权限
 - 必须在请求头中携带有效的管理员token
@@ -189,3 +199,10 @@ PUT /user/admin/:id
 }
 ```
 
+## Echo功能API
+
+## Setting功能API
+
+## Todo功能API
+
+## Connect功能API
