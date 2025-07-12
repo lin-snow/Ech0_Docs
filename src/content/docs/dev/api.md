@@ -52,9 +52,9 @@ POST /register
 
 ---
 
-### 注册
+### 获取所有用户
 ```
-POST /allusers
+GET /allusers
 ```
 
 **描述**: 获取所有用户及其基本信息接口
@@ -111,3 +111,4 @@ Authorization: Bearer <your_token>
     }
 }
 ```
+
