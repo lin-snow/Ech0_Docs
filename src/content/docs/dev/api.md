@@ -188,7 +188,7 @@ Authorization: Bearer <your_token>
 - 必须在请求头中携带有效的管理员token
 
 **路径参数**:
-- `用户id` (integer): 要更新权限的用户ID
+- `用户id` : 要更新权限的用户 ID
 
 **响应示例**:
 ```json
@@ -200,6 +200,21 @@ Authorization: Bearer <your_token>
 ```
 
 ## Echo功能API
+
+### 点赞
+```
+POST /echo/like/:id
+```
+
+**描述**: Ech0点赞接口
+
+**路径参数**:
+- `Echo ID` : 要点赞的Ech0 ID
+
+**响应示例**:
+```json
+{"code":1,"msg":"点赞Echo成功","data":null}
+```
 
 ## Setting功能API
 
