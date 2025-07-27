@@ -9,7 +9,7 @@ Ech0 原创的内容聚合与互联功能，支持多实例间互通、内容订
 
 在设置中编辑 Ech0 Connect 设置
 
-在输入框中输入 Ech0 地址，如 ech0.example.com，点击加号
+在输入框中输入 Ech0 地址，如 http(s)://ech0.example.com，点击加号
 
 ## 查看
 
