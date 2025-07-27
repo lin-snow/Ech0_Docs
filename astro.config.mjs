@@ -23,6 +23,14 @@ export default defineConfig({
                 ],
             },
             {
+                label: '功能',
+                items: [
+                    { label: '评论', slug: 'function/comment' },
+                    { label: 'Ech0 Connect', slug: 'function/connect' },
+                    { label: 'Meting API', slug: 'function/metingapi' },
+                ],
+            },
+            {
                 label: '开发',
                 items: [
                     { label: '开发指南', slug: 'dev/guide' },
