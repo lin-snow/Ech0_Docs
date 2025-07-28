@@ -3,8 +3,9 @@ title: 开发指南
 description: 开发环境搭建和前后端联调指南
 ---
 
+
 ## **后端要求:**  
-📌 **Go 1.24.3+**
+📌 **Go 1.24.5+**
 
 📌 **C 编译器**  
 使用 `go-sqlite3` 等需要 CGO 的库时，需安装：  
@@ -18,8 +19,13 @@ description: 开发环境搭建和前后端联调指南
 安装[wire](https://github.com/google/wire)用于依赖注入文件生成:  
 - `go install github.com/google/wire/cmd/wire@latest`
 
+📌 **Golangci-Lint**  
+安装[Golangci-Lint](https://golangci-lint.run/)用于lint和fmt:  
+- 在项目根目录下执行`golangci-lint run`进行lint  
+- 在项目根目录下执行`golangci-lint fmt`进行格式化  
+
 ## **前端要求:**  
-📌  **NodeJS v23.11.1+, PNPM v10**
+📌  **NodeJS v23.11.1, PNPM v10.13.1**
 > 注：如需要多个nodejs版本共存可使用[fnm](https://github.com/Schniz/fnm)进行管理  
 
 ---
